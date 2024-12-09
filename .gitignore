@@ -36,6 +36,7 @@ local_settings.py
 *.bak
 *.sqlproj
 *.sqlproj.user
+*.sqlite3
 
 # Logs
 *.log
