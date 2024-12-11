@@ -36,6 +36,7 @@
         .header nav {
             display: flex;
             gap: 1.5rem;
+            align-items: center;
         }
 
         .header nav a {
@@ -49,6 +50,19 @@
             color: rgb(80, 209, 80);
             font-weight: bold;
         }
+        .header .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .header .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
@@ -56,17 +70,19 @@
     <header class="header">
         <div class="logo">
             <a href="./Home.htm">
-                <img src="../images/logo_preview_rev_1.png" width="80px">
-            </a>
+                <img src="../images/logo_preview_rev_1.png" width="80">
+            </a> 
         </div>
         <nav>
             <a href="./Home.htm">Trang chủ</a>
             <a href="./Introduce.htm">Giới thiệu</a>
             <a href="./fee.htm">Giá sân</a>
             <a href="./Contact.htm">Liên hệ</a>
-            <a href="./Profile.htm">
-                <img src="../images/express.png" width="80">
-            </a>
+            <div class="profile">
+                <a href="./Profile.htm">
+                    <img src="../images/express.png">
+                </a>    
+            </div>
         </nav>
     </header>
 </body>
