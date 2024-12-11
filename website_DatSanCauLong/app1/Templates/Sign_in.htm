@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <style>
+        body {
+            background: url(../images/Untitled.png) no-repeat center/cover;
+            backdrop-filter: blur(1px);
+            font-family: 'Poppins', Arial;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 800px 5px 0;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: white;
+            height: auto;
+            margin: auto;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 350px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            color: #2d3748;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        label {
+            font-weight: 1000;
+            color: #4a5568;
+        }
+
+        input {
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid gainsboro;
+            border-radius: 8px;
+            border-color: black;
+            transition: all 0.3s ease;
+            width: 92%;
+            cursor: auto; 
+        }
+
+        input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 8px rgba(59, 130, 246, 0.2);
+        }
+
+        button {
+            padding: 0.8rem;
+            font-size: 1rem;
+            background-color: rgb(57, 111, 177);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1a3b86;
+        }
+
+        .footer {
+            margin-top: 1.5rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgb(67, 65, 65);
+        }
+
+        .footer a {
+            color: #2d3748;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Đăng nhập</h1>
+        <form action="./Home.htm" method="post">
+            <div>
+                <label for="username"></label>
+                <input type="text" id="username" name="username" placeholder="Tên đăng nhập " required>
+            </div>
+            <div>
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="Mật khẩu" required>
+            </div>
+            <button type="submit">Đăng nhập</button>
+        </form>
+        <div class="footer">
+            Bạn chưa có tài khoản? <a href="./Sign_up.htm">Đăng kí tại đây</a>
+        </div>
+    </div>
+</body>
+</html>
